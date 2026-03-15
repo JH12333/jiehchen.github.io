@@ -34,14 +34,14 @@
           I possess strong self-learning capabilities and the ability to adapt
           quickly. During the summer break prior to starting university, I
           completed a C# course in just one week; this laid a solid foundation
-          for my subsequent computer science coursework. I have independently
-          mastered various modules within Blender—most notably Geometry Nodes,
-          modeling, and sculpting. I also have some familiarity with material
-          nodes, though I am not as confident in this area as I am with Geometry
-          Nodes. Modules I have yet to explore in depth include rendering
-          engines, rigging and animation, and the compositor. My main Blender
-          projects focus on using Geometry Nodes to procedurally generate
-          assets. The core of my tree generator is based on the Space
+          for my subsequent computer science coursework. I have developed
+          experience with various modules within Blender—most notably Geometry
+          Nodes, modeling, and sculpting. I also have some familiarity with
+          material nodes, though I am not as confident in this area as I am with
+          Geometry Nodes. Modules I have yet to explore in depth include
+          rendering engines, rigging and animation, and the compositor. My main
+          Blender projects focus on using Geometry Nodes to procedurally
+          generate assets. The core of my tree generator is based on the Space
           Colonization Algorithm. During this project, I greatly improved my
           problem-solving skills, for example by using built-in field
           interpolation and element-wise parallelism to reduce the performance
@@ -50,18 +50,50 @@
       </section>
       <section id="projects">
         <h2>Projects</h2>
-        <p>
-          The project I have worked on for the longest time is a Geometry Nodes
-          tree generator based on the Space Colonization Algorithm (SCA). I am
-          still actively improving it and plan to extend its functionality based
-          on another paper that applies SCA to lightning generation. On GitHub,
-          I also have a Rust project that implements a 2D visualization of the
-          Space Colonization Algorithm. This project was inspired by both the
-          generator I developed and the original SCA paper. I also worked with
-          my brother on a collaborative project built with the MERN stack. My
-          other coding projects are mainly coursework assignments, mostly small
-          terminal-based programs.
-        </p>
+        <article class="project-card" id="project-sca-tree">
+          <h3>SCA Tree Generator</h3>
+          <img src="" alt="Image of the SCA Tree Generator Node Groups" />
+          <p>
+            A long-term Blender Geometry Nodes project based on the Space
+            Colonization Algorithm (SCA). I am still actively improving this
+            generator and plan to extend it using ideas from research on
+            lightning generation.
+          </p>
+        </article>
+        <article class="project-card" id="project-rust-sca">
+          <h3>Rust SCA Visualization</h3>
+          <img src="" alt="Image of the Rust SCA Program" />
+          <p>
+            A Rust project that implements a 2D visualization of the Space
+            Colonization Algorithm. This project was inspired by both my Blender
+            generator and the original SCA paper. This project is built using
+            Rust and the egui GUI library.
+          </p>
+          <a
+            class="project-link"
+            href="https://github.com/JH12333/SCA-2D-Simulation"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on GitHub
+          </a>
+        </article>
+        <article class="project-card" id="project-mern">
+          <h3>MERN Collaboration</h3>
+          <p>
+            A collaborative project built with the MERN stack. I worked on this
+            project together with my brother as part of a team-based development
+            experience.
+          </p>
+        </article>
+        <article class="project-card" id="project-coursework">
+          <h3>Coursework Programs</h3>
+          <p>
+            My other coding projects mainly come from coursework assignments.
+            Most of them are smaller terminal-based programs that helped me
+            build my programming fundamentals.
+          </p>
+        </article>
       </section>
       <section id="contact">
         <h2>Contact Me</h2>
@@ -76,7 +108,6 @@
               required
             />
           </div>
-
           <div class="form-group">
             <label for="email">Email</label>
             <input
@@ -87,7 +118,6 @@
               required
             />
           </div>
-
           <div class="form-group">
             <label for="message">Message</label>
             <textarea
@@ -97,7 +127,6 @@
               required
             ></textarea>
           </div>
-
           <button type="submit">Submit</button>
         </form>
       </section>

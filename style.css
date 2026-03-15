@@ -12,6 +12,7 @@ body {
   line-height: 1.7;
   background-color: #e9f6e5;
   color: #000000a7;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -21,6 +22,31 @@ nav {
   padding: 1rem 2rem;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+}
+
+section {
+  background-color: #ffffff;
+  margin: 2rem 0;
+  padding: 2rem;
+  border: 2px solid #e3fbea;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px #11ff0014;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+p {
+  margin-top: 0.5rem;
 }
 
 #nav-menu {
@@ -47,34 +73,27 @@ nav {
   border-bottom: 2px solid #b9b9b9;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 2rem 4rem;
+.project-card {
+  margin-bottom: 2rem;
 }
 
-section {
-  background-color: #ffffff;
-  margin: 2rem 0;
-  padding: 2rem;
-  border: 1px solid #dbe3ee;
-  border-radius: 1px solid #518fe7;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px #11ff0014;
+.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-h1,
-h2 {
-  margin-bottom: 1rem;
-  color: #111827;
-}
-
-p {
-  margin-top: 0.5rem;
-}
-
-#contact {
-  display: block;
+.project-link:hover,
+.project-link:focus {
+  background-color: #97f9b6;
+  color: #262f39;
+  transform: translateY(-1px);
 }
 
 #contact-form {
@@ -98,7 +117,7 @@ p {
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 0.9rem 1rem;
+  padding: 1rem 1rem;
   border: 1px solid #cbd5e1;
   border-radius: 10px;
   font-size: 1rem;
@@ -124,10 +143,10 @@ p {
 #contact-form button {
   align-self: flex-start;
   background-color: #2563eb;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 10px;
-  padding: 0.85rem 1.4rem;
+  padding: 0.8rem 1.5rem;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
@@ -135,6 +154,7 @@ p {
 }
 
 #contact-form button:hover {
-  background-color: #1d4ed8;
+  background-color: #97f9b6;
+  color: #262f39;
   transform: translateY(-2px);
 }
