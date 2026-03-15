@@ -21,7 +21,7 @@ nav {
   background-color: #a9f0c9;
   padding: 1rem 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px #00000026;
 }
 
 main {
@@ -157,4 +157,18 @@ p {
   background-color: #97f9b6;
   color: #262f39;
   transform: translateY(-2px);
+}
+
+.image-full {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.generated-trees {
+  display: flex;
+}
+.image-half {
+  width: 50%;
+  height: auto;
 }
