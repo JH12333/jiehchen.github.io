@@ -85,6 +85,7 @@ p {
   color: white;
   padding: 0.2rem 1rem;
   border-radius: 10px;
+  font-size: 0.8em;
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -108,7 +109,7 @@ p {
 }
 
 .form-group label {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #111827;
@@ -117,10 +118,10 @@ p {
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 1rem 1rem;
+  padding: 0.8em 1em;
   border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  font-size: 1rem;
+  border-radius: 0.8em;
+  font-size: 0.8em;
   font-family: inherit;
   background-color: #f8fafc;
   color: #1f2937;
@@ -136,7 +137,7 @@ p {
 }
 
 .form-group textarea {
-  min-height: 140px;
+  min-height: 12em;
   resize: vertical;
 }
 
@@ -146,9 +147,9 @@ p {
   color: #ffffff;
   border: none;
   border-radius: 10px;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 700;
+  padding: 0.8em 1.2em;
+  font-size: 0.8em;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -168,7 +169,43 @@ p {
 .generated-trees {
   display: flex;
 }
+
 .image-half {
   width: 50%;
   height: auto;
+}
+
+@media (max-width: 430px) {
+  body {
+    font-size: 12px;
+  }
+
+  .generated-trees {
+    display: block;
+  }
+
+  .image-half {
+    display: block;
+    width: 100%;
+  }
+
+  nav {
+    padding: 0.5em 0.8em;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  nav {
+    padding: 0.6em 1em;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    font-size: 24px;
+  }
 }
