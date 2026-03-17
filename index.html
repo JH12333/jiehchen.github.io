@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jiehe | Personal Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -57,20 +65,87 @@
             height="603"
             class="image-full"
           />
-          <div class="generated-trees">
+          <div class="d-block d-md-none tree-stack">
             <img
               src="images/tree1.png"
               alt="Procedurally generated tree with a broader canopy and denser branches"
               width="1920"
               height="1920"
-              class="image-half"
+              class="img-fluid"
             />
             <img
               src="images/tree2.png"
               alt="Procedurally generated tree with a tall trunk and sparse branches"
               width="1920"
               height="1920"
-              class="image-half"
+              class="img-fluid"
+            />
+          </div>
+          <div
+            id="treeCarousel"
+            class="carousel slide d-none d-md-block d-lg-none"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/tree1.png"
+                  alt="Procedurally generated tree with a broader canopy and denser branches"
+                  width="1920"
+                  height="1920"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/tree2.png"
+                  alt="Procedurally generated tree with a tall trunk and sparse branches"
+                  width="1920"
+                  height="1920"
+                  class="d-block w-100"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#treeCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#treeCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="d-none d-lg-flex tree-side-by-side">
+            <img
+              src="images/tree1.png"
+              alt="Procedurally generated tree with a broader canopy and denser branches"
+              width="1920"
+              height="1920"
+              class="img-fluid w-50"
+            />
+            <img
+              src="images/tree2.png"
+              alt="Procedurally generated tree with a tall trunk and sparse branches"
+              width="1920"
+              height="1920"
+              class="img-fluid w-50"
             />
           </div>
           <p>
@@ -107,9 +182,11 @@
         <article class="project-card" id="project-mern">
           <h3>MERN Collaboration</h3>
           <p>
-            A collaborative project built with the MERN stack. I worked on this
-            project together with my brother as part of a team-based development
-            experience.
+            A collaborative MERN-stack project developed with my brother. My
+            main contribution was backend development, where I worked on
+            server-side logic and supported the overall functionality of the
+            application. This project helped me gain experience with team-based
+            development and full-stack workflows.
           </p>
           <a
             class="project-link"

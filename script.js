@@ -12,7 +12,7 @@ contactForm.addEventListener("submit", (event) => {
   const messageValue = messageInput.value.trim();
 
   formStatus.textContent = "";
-  formStatus.style.color = "red";
+  formStatus.className = "error";
 
   if (nameValue === "") {
     formStatus.textContent = "Please enter your name.";
@@ -54,8 +54,8 @@ contactForm.addEventListener("submit", (event) => {
     return;
   }
 
-  formStatus.style.color = "green";
   formStatus.textContent = "Your message has been submitted!";
+  formStatus.className = "success";
 
   contactForm.reset();
 });
