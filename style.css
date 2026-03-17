@@ -27,7 +27,7 @@ nav {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 3rem 2rem 4rem;
 }
@@ -218,8 +218,23 @@ p {
   }
 }
 
-@media (min-width: 992px) {
-  body {
-    font-size: 18px;
-  }
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
+
+footer p,
+footer small {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
