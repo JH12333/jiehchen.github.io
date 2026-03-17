@@ -200,6 +200,31 @@ p {
   height: auto;
 }
 
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
+
+footer p,
+footer small {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #003b8e;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #0b2852;
+  text-decoration: underline;
+}
+
 @media (max-width: 767px) {
   body {
     font-size: 14px;
@@ -216,25 +241,4 @@ p {
   nav {
     padding: 0.5em 0.8em;
   }
-}
-
-footer {
-  text-align: center;
-  padding: 1.5rem 1rem;
-  margin-top: 2rem;
-  border-top: 1px solid #ccc;
-}
-
-footer p,
-footer small {
-  margin: 0.5rem 0;
-}
-
-footer a {
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
